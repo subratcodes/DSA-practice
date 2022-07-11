@@ -21,6 +21,11 @@ class LinkedList{
     this.length++;
     return this;
   }
+
+  prepend(value){
+
+    
+  }
   
 }
 
