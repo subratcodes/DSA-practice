@@ -31,6 +31,28 @@
 
 
 
+class findIndex{
+
+  //a is the array
+  //n is the total lenght
+  //x -- value 1 
+  //y -- value 2
+    minDist(a, n, x, y)
+    {
+        // code here
+       const map=new Map();
+      for(let i=0;i<n;i++){
+        if(a[i]===x) map.set(a[i],i);
+        else if(a[i]===y) map.set(a[i],i)
+              
+      }
+      if(map.size!=2) return -1;
+      let distance= (map.get(x)-map.get(y));
+      
+       return distance;
+    
+    }
+}
 
 
 
@@ -38,5 +60,6 @@
 
 
 module.exports={
-  problemSolving
+  problemSolving,
+  findIndex
 }

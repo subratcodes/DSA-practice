@@ -1,11 +1,12 @@
-const {problemSolving}=require('./problems.js');
+const {problemSolving,findIndex}=require('./problems.js');
 const {LinkedList}=require('./linkedList.js');
 
 
 
+let myLinkList= new LinkedList(10);
 
-const mylist=new LinkedList(10);
-
-mylist.append(9);
-
-console.log(mylist);
+myLinkList.append(9);
+myLinkList.append(8);
+let a =myLinkList.insert(1,8.5)
+a =myLinkList.insert(2,10)
+console.log(a)
