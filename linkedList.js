@@ -84,12 +84,26 @@ class LinkedList{
         currentNode=currentNode.next;
         counter++;
       }
-
       return currentNode;
+   
+}
+ 
+delete(index,value){
+  if(index>this.length) throw new Error('Index is out of bound');
+  let leaderNode= this.traverseToIndex(index-1);
+  const unwantedNode=leaderNode.next;
+  leaderNode.next=unwantedNode.next;
+  this.length--;
+  
+  return this.printList();
+  
   
   
 }
 }
+
+
+
 
 
 
