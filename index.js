@@ -1,16 +1,13 @@
 const {problemSolving,findIndex}=require('./problems.js');
-const {LinkedList}=require('./linkedList.js');
+const {LinkedList,DoubleLinkList}=require('./doublyLinkedList.js');
 
 
 
-let myLinkList= new LinkedList(10);
+const dLinkList=new DoubleLinkList(10);
+let a= dLinkList.append(9)
 
-myLinkList.append(9);
-myLinkList.append(8);
-myLinkList.append(7)
+let b=dLinkList.prepend(11);
+ console.log(b)
+a=dLinkList.printlist();
 
-
-//deleting callback;
- let a= myLinkList.delete(1)
-a=myLinkList.delete(2)
 console.log(a)
