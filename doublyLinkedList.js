@@ -9,6 +9,7 @@ class DoubleLinkList{
     }
     this.tail=this.head;
     this.length=1;
+
     
     
   }
@@ -23,9 +24,9 @@ class DoubleLinkList{
      }
          //we assign the tail to the prev button.
      
-     this.tail=node;
-     this.head.next=node;
-      
+    this.tail.next=node;
+    this.tail=node
+    
       this.length++;
 
      return this;
@@ -54,6 +55,7 @@ class DoubleLinkList{
     
     while(currentNode){
 
+        console.log(currentNode.value)
        const data={
          value:currentNode.value
        }
@@ -68,28 +70,53 @@ class DoubleLinkList{
     
   }
 
-
   //deletes node with the help of the value.
-  deleteNode(value){
+  deleteNode(index){
+    if(index>this.length) throw Error('Index cannot be greater than the length');
 
-
+     // if(index==0|| this.length==0)
     
+    let unwantedNode =this.traverseToIndex(index);
+    let headNode=this.traverseToIndex(index-1);
+  
+     headNode.next=unwantedNode.next
+    unwantedNode.next.prev=headNode
+    
+    return this
+    
+     
+     
   }
 
-  traverse(index){
+ //traverses to the index of the front.
+  traverse(value){
 
      if(index>this.length) throw new Error('index is out of bound.')
     let counter=0;
     let currentNode=this.head;
     while(currentNode){
-      
+       if(currentNode.value==value) return currentNode;
+      currentNode=currentNode.next;
     }
     
   }
 
-  
 
-  
+  //traverses to the index and the returns the current node.
+   traverseToIndex(index){
+     if(index>this.length) throw Error('Index is out of range')
+     let data=this.head;   
+     
+     for(let i=0;i<this.length;i++){
+          if(i==index){
+            return data;
+          }
+        data=data.next;
+       
+     }
+     
+   }
+
 }
 
 module.exports={

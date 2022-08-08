@@ -3,11 +3,12 @@ const {LinkedList,DoubleLinkList}=require('./doublyLinkedList.js');
 
 
 
-const dLinkList=new DoubleLinkList(10);
-let a= dLinkList.append(9)
+const a=new DoubleLinkList(10);
+a.append(8);
+a.append(7);
+a.append(6);
+let result= a.deleteNode(2);
 
-let b=dLinkList.prepend(11);
- console.log(b)
-a=dLinkList.printlist();
 
-console.log(a)
+
+
