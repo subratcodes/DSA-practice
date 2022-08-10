@@ -26,7 +26,37 @@
  
    
 }  
- 
+
+ findTriplets(arr,n){ 
+    if(arr.length==0) throw 'Lenght of the array is zero.';
+     //hashset.
+
+   let hasTriplets=false;
+
+   for(let i=0;i<arr.length-2;i++){
+        let thirdNumber=new Set();
+     for(let j=i+1;j<arr.length-1;j++){
+        const third_result= -(arr[i]+arr[j])
+
+       //need to add a condition over here.
+       if(thirdNumber.has(third_result)){
+          hasTriplets=true;
+         console.log(i,j)
+         break;
+       }else{
+         thirdNumber.add(arr[j])
+       }
+
+       
+     }
+
+     if(hasTriplets) break;     
+  }
+
+   return hasTriplets;
+  
+  }
+
 }
 
 
