@@ -76,7 +76,7 @@ class LinkedList{
   }
 
 
-    traverseToIndex(index){
+  traverseToIndex(index){
           if(index>this.length) throw new Error('Wrong Index added.')
       let counter=0;
       let currentNode=this.head;
@@ -88,7 +88,7 @@ class LinkedList{
    
 }
  
-delete(index,value){
+    delete(index,value){
   if(index>this.length) throw new Error('Index is out of bound');
   let leaderNode= this.traverseToIndex(index-1);
   const unwantedNode=leaderNode.next;
@@ -100,6 +100,18 @@ delete(index,value){
   
   
 }
+
+
+  //this method reverses the linked list in the opposite direction.
+ reverse(){
+
+
+   console.log(this.head);
+   
+ }
+  
+
+
 }
 
 

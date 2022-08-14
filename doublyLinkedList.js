@@ -117,6 +117,14 @@ class DoubleLinkList{
      
    }
 
+
+
+  reverse(){
+
+
+   console.log(this.head);
+   
+ }
 }
 
 module.exports={

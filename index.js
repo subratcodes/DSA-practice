@@ -1,6 +1,8 @@
 const {problemSolving,findIndex}=require('./problems.js');
-const{LinkedList,DoubleLinkList}=require('./doublyLinkedList.js');
+const {DoubleLinkList}=require('./doublyLinkedList.js');
 const {cyclicRoation}=require('./rotation.js');
+const stringProblems=require('./strings.js');
+const {LinkedList} =require('./linkedList.js');
 
 
 
@@ -11,9 +13,20 @@ const {cyclicRoation}=require('./rotation.js');
 // console.log(a)
 
 
-let arr=[1,2,3,4,5]
+// let arr=[1,2,3,4,5]
 
-let rotations=new cyclicRoation(); 
- let a=rotations.clockwise(arr,arr.length)
+// let rotations=new cyclicRoation(); 
+//  let a=rotations.clockwise(arr,arr.length)
 
-console.log(a)
+// console.log(a)
+
+
+
+const a= new stringProblems.EasyStringProblems();
+console.log(a.implementStr('subrat','sub'));
+
+
+// let a=new LinkedList(10);
+// a.append(9)
+// a.append(8)
+// a.reverse()
