@@ -18,7 +18,9 @@ class cyclicRoation {
 
   }
 
-
+ printAlternateCharacters(){
+   
+ }
 
 
 
