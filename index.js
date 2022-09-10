@@ -4,7 +4,7 @@
 // const stringProblems=require('./strings.js');
 // const {LinkedList} =require('./linkedList.js');
  const {EasyArrays}=require('./arrays.js');
-
+const {Stack,arayStack} =require('./stacks.js');
 
 // let easyArrayProblems=new EasyArrays();
 
@@ -13,5 +13,10 @@
 
 const {Solution}= require('./search.js');
 
-let index=new EasyArrays();
-console.log(index.reverseArrayInGroups([1,2,3,4,5],5));
+let browserHistory=new arayStack();
+let a= browserHistory.push(5);
+
+a=browserHistory.peek()
+console.log(a)
+
+
