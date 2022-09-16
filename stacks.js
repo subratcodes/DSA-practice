@@ -87,7 +87,11 @@ push(value){
 pop(){
 
   this.data.pop();
-  return this.data;
+  this.length--;
+  this.top=this.data.length-1;
+
+  
+//  return this.data;
   
 }
   
@@ -100,6 +104,112 @@ peek(){
 
 
 
+
+
+// queues data structures works on FIFO
+
+class queue{
+ // constructor
+  constructor(){
+  this.first=null;
+  this.last=null;
+  this.length=0;
+}
+
+  peek(){
+   return this.first;
+    
+  }
+
+
+  // adds the value
+  enqueue(value){
+ let node= new Node(value)
+    //first time entering.
+    if(this.length==0){
+      this.first=node;
+      this.last=node;
+      
+     
+    }else{
+
+      let lastNode=this.last;
+      lastNode.next=node;
+      this.last=node;
+  
+      
+    }
+     
+    this.length++;
+   return this;    
+  }
+
+  
+  dequeue(){
+    let nodeStack=this.first;c
+    this.first=nodeStack.next;
+    this.length--;
+    return this;
+  }
+
+
+  
+}
+
+
+
+class ParenthesisChecker
+{
+    //Function to check if brackets are balanced or not.
+    ispar(x)
+    {
+      if(x.length==1) return false;
+        //your code here
+    
+         let openingInput=false;
+        
+        let stackChecker= new arayStack()
+        
+        for(let i=0;i<x.length;i++){
+               // console.log(x.charAt(i))
+             if(x.charAt(i)=='{'|| x.charAt(i)=='(' || x.charAt(i)=='[') {
+
+                openingInput=true;
+               stackChecker.push(x.charAt(i)); 
+           
+             }
+             
+             
+              if(x.charAt(i)=='}'||x.charAt(i)==')' || x.charAt(i)==']'){
+                      
+                   
+                  let char=x.charAt(i);
+                     
+          
+                 if(char=='}'&&stackChecker.peek()=='{')stackChecker.pop();
+               else if(char==')' && stackChecker.peek()=='(')stackChecker.pop();
+               else if(char==']'&& stackChecker.peek()=='[')stackChecker.pop();
+               
+              
+  
+              }
+            
+            
+        }
+
+
+      if(openingInput==false) return false;
+
+      if(stackChecker.data.length==0) return true;
+      else return  false;
+    
+       
+        
+    }
+}
+
+
 module.exports={
-  Stack,arayStack
+  Stack,arayStack,queue,
+  ParenthesisChecker
 }

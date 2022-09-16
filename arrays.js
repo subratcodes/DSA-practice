@@ -10,8 +10,6 @@ printAlternateElements(arr, n){
 
   
 }
-
-
   printSecondLargest(arr,n){
 
 
@@ -58,7 +56,6 @@ return result;
     
   }
 
-
   //check if this is an array or not.
   reverseArrayInGroups(arr,n,k){
    if(n==0||k==0) throw 'wrong format entered';
@@ -77,12 +74,58 @@ return result;
     
   }
 
-
-
   findLastIndex(start,k,n){
     return start+k;  
   }
- 
+
+  reverseArrayInGroups(arr,n,k){
+
+     if(n==0) throw 'Empty array cannot be reversed';
+     if(k==0) return arr;
+
+    
+    for(let i=0;i<n;i=i+k){
+
+       let start=i;
+      let end=Math.min(i+k-1,n-1);
+      let temp;
+
+
+      //swapping alogritihm begins here.
+      while(start<end){
+        temp=arr[start];
+        start=arr[end];
+        arr[end]=temp;
+        start++;
+        end--;
+      }
+
+
+  
+      
+    }
+
+
+
+    return arr;
+    
+  }
+
+  missingNoFromArray(arr,n){
+
+   let total = Math.floor(n * (n + 1) / 2);
+
+    console.log(total)
+        
+
+    // console.log(arr_total)
+        
+         
+var pipeline = [{ $match: {} }, { $project: { . . . } }]
+  
+  }
+  
+  
 }
 
 

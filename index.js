@@ -3,20 +3,17 @@
 // const {cyclicRoation}=require('./rotation.js');
 // const stringProblems=require('./strings.js');
 // const {LinkedList} =require('./linkedList.js');
- const {EasyArrays}=require('./arrays.js');
-const {Stack,arayStack} =require('./stacks.js');
+const { EasyArrays } = require('./arrays.js');
+const { Stack, arayStack, queue, ParenthesisChecker } = require('./stacks.js');
 
 // let easyArrayProblems=new EasyArrays();
 
 // easyArrayProblems.printAlternateElements([1,2,3,4,5,6,7,8,9,10],10)
 
 
-const {Solution}= require('./search.js');
+const { Solution } = require('./search.js');
 
-let browserHistory=new arayStack();
-let a= browserHistory.push(5);
+let checker = new EasyArrays();
+let a = checker.missingNoFromArray([1,2,3,5], 5)
 
-a=browserHistory.peek()
 console.log(a)
-
-
