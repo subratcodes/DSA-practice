@@ -17,5 +17,6 @@ BTree.insert(1);
 a=BTree.insert(3);
 a=BTree.insert(4);
 a=BTree.remove(3);
+a=BTree.remove(4);
 
 console.log(a)

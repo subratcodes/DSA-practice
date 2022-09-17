@@ -65,17 +65,31 @@ class BinaryTree{
     
   while(pointer){
        if(value>pointer.value) pointer=pointer.right;
+
+                     
+
+         
       else if(value<pointer.value) pointer=pointer.left;
       else {
-        //means the pointer index has been given.
+
+  
+        
          let remainderPointer=pointer;
         if(remainderPointer.right){
+
+          if(!remainderPointer.right.left&&!remainderPointer.right.right) throw Error ('Cannot delete this node');
+              
            remainderPointer.value=remainderPointer.right.value;
            remainderPointer.right=remainderPointer.right.right;
+           break;
         
         }else if(remainderPointer.left){
+
+           if(!remainderPointer.left.left&&!remainderPointer.left.right) throw Error('Cannot delete this node');
+          
           remainderPointer.value=remainderPointer.left.value;
           remainderPointer.left=remainderPointer.left.left;
+          break;
         }
 
        
