@@ -121,10 +121,30 @@ return result;
     // console.log(arr_total)
         
          
-var pipeline = [{ $match: {} }, { $project: { . . . } }]
+
   
   }
+
   
+  thirdLargest(arr,n){
+
+  let a=arr[0],b=arr[0],c=arr[0];
+    for(let i=1;i<n;i++){
+
+      if(arr[i]>a){
+        c=b;
+        b=a;
+        a=arr[i];
+      }else if(arr[i]>b){
+        c=b;
+        b=arr[i];
+      } 
+      
+      
+    }
+
+    console.log(c)
+  }
   
 }
 
