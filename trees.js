@@ -76,9 +76,9 @@ class BinaryTree {
   //left =----> root--->right
   inOrder(root){
    if(!root) return null;
-    this.inorder(root.left)
+    this.inOrder(root.left)
     console.log(root.value)
-    this.inorder(root.right)
+    this.inOrder(root.right)
   
   }
 
@@ -100,6 +100,30 @@ class BinaryTree {
   }
 }
 
+
+class BinaryTreeQuestions{
+
+
+countLeaves(node){
+ if(node == null)     
+            return 0; 
+        if(node.left == null && node.right == null) 
+            return 1;         
+        else
+            return this.countLeaves(node.left)+ 
+               this.countLeaves(node.right); 
+
+  
+  
+}
+
+
+  
+}
+
+
+
 module.exports = {
-	BinaryTree
+	BinaryTree,BinaryTreeQuestions
 };
+
