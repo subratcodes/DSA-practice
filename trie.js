@@ -22,8 +22,25 @@ constructor(){
   }
  //inserts in the trie.
   insert(str){
-    
+
+    pCrawl=this.children
+    let length=str.length
+    let index;
+    // 
+    for(let i=0;i<length;i++){
+      index=key[i].charCodeAt(0)- 'a'.charCodeAt(0);
+      if(pCrawl.children[i]==null){
+        pCrawl.children[i]=new Trie()
+      }
+      pCrawl=pCrawl.children[i]
+    }
+    this.endOfWord=true
   }
 
   
+}
+
+
+module.exports={
+  Trie
 }
