@@ -149,6 +149,17 @@ return result;
 }
 
 
+
+class SlidingWindow{
+
+ maxSum(arr,n,k){
+   
+ }
+  
+  
+  
+}
+
 module.exports={
   EasyArrays
 }

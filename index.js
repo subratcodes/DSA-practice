@@ -17,6 +17,7 @@ a=subTree.insert(4)
 console.log(a)
 
 
+
 let ques=new BinaryTreeQuestions();
 let b=ques.countLeaves(a)
 console.log(b)
