@@ -1,23 +1,13 @@
-// const {problemSolving,findIndex}=require('./problems.js');
-// const {DoubleLinkList}=require('./doublyLinkedList.js');
-// const {cyclicRoation}=require('./rotation.js');
-// const stringProblems=require('./strings.js');
-// const {LinkedList} =require('./linkedList.js');
- const { EasyArrays } = require('./arrays.js');
-// const { Stack, arayStack, queue, ParenthesisChecker } = require('./stacks.js');
- const {BinaryTree,BinaryTreeQuestions}=require('./trees.js')
- let easyArrayProblems=new EasyArrays();
 
+const { EasyArrays } = require('./arrays.js');
+const {Graph}=require('./graphs.js')
 
-let subTree=new BinaryTree()
-let a=subTree.insert(2)
-a=subTree.insert(1)
-a=subTree.insert(3)
-a=subTree.insert(4)
-console.log(a)
+let directed=new Graph()
 
+for (let i=0;i<6;i++){
+  b=directed.addVertex(i)
+}
 
-
-let ques=new BinaryTreeQuestions();
-let b=ques.countLeaves(a)
-console.log(b)
+b=directed.addEdge(0,1)
+b=directed.addEdge()
+console.dir(b)
