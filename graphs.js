@@ -19,6 +19,7 @@ class Graph {
 
     try {
 
+      if(this.validateNodesConnections(node1,node2)) throw Error('Nodes already added')
       this.adjacentList[node1].push(node2)
       this.adjacentList[node2].push(node1)
       return this.adjacentList
@@ -26,7 +27,6 @@ class Graph {
     } catch (err) {
       console.log(err)
     }
-
 
   }
 
