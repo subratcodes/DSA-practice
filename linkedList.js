@@ -109,6 +109,31 @@ class LinkedList{
    console.log(this.head);
    
  }
+
+  getMiddle(node)
+    {
+        //your code here
+        if(!node) return -1
+       let temp=head
+        let slow_pnt=temp
+        let fast_pointer=temp
+        
+        while(fast_pointer){
+            if(fast_pointer.next==null){
+                return slow_pnt.data
+            }
+            
+            
+            if(fast_pointer.next.next==null) fast_pointer=fast_pointer.next
+            else fast_pointer=fast_pointer.next.next
+            slow_pnt=slow_pnt.next
+            
+        }
+        return -1
+        
+        
+    }
+
   
 
 

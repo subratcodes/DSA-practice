@@ -116,7 +116,10 @@ countLeaves(node){
   
   
 }
-
+checkValidity(root){
+  if(!root) return false
+  
+}
 
   
 }

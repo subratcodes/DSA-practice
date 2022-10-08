@@ -12,7 +12,6 @@ class Graph {
     } else throw 'Node has already been added'
 
   }
-
   //adds the edges from node 1 to node 2
   //this is an implementation of undirected acyclic graph
   addEdge(node1, node2) {
@@ -29,7 +28,6 @@ class Graph {
     }
 
   }
-
   validateNodesConnections(node1, node2) {
     let arr = this.adjacentList[node2]
     return arr.includes(node1)
@@ -45,6 +43,35 @@ class Graph {
       }
       console.log(node + "-->" + connections);
     }
+   }
+
+  runBFS(this,root){
+
+     if(!root) throw Error('No root found')
+     let visited=[]
+     let queue=[]
+    while(root){
+     vertex=queue.shift()
+      queue.push(vertex)
+
+      for (let i=0;i<this.adjacentList[vertex].length;i++){
+        if(queue includes(this.adjacentList[vertex][i])){
+          //do nothing cause it has been already added to the queueu
+        }else {
+          
+        }
+      }
+      
+      
+
+
+
+      
+    }
+     
+     
+
+    
   }
 }
 
