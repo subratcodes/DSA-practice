@@ -135,8 +135,27 @@ class LinkedList {
 
   insert_middle(val) {
 
+    let temp=this.head
+     let fast=temp.next.next
+     let slow=temp
 
+  
+     while(fast!=null){
+       fast=fast.next
+       slow=slow.next
+     }
+
+    //slow will  be the middle pointer element
+    let node={
+      value:val,
+      next:null
+    }
+    node.next=slow.next
+    slow.next=node
+  
+    return this.printList()
     
+   
 
     }
 

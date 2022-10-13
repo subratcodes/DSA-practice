@@ -54,13 +54,13 @@ class Graph {
      vertex=queue.shift()
       queue.push(vertex)
 
-      for (let i=0;i<this.adjacentList[vertex].length;i++){
-        if(queue includes(this.adjacentList[vertex][i])){
-          //do nothing cause it has been already added to the queueu
-        }else {
+      // for (let i=0;i<this.adjacentList[vertex].length;i++){
+      //   if(queue includes(this.adjacentList[vertex][i])){
+      //     //do nothing cause it has been already added to the queueu
+      //   }else {
           
-        }
-      }
+      //   }
+      // }
       
       
 

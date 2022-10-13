@@ -1,8 +1,7 @@
-
 const { EasyArrays } = require('./arrays.js');
 const {Graph}=require('./graphs.js')
 const {Solution}=require('./two_pointer.js')
-const {LinkedList}=require('./linkedList')
+const {LinkedList}=require('./linkedList.js')
 
 
 // let directed=new Graph()
@@ -23,4 +22,10 @@ const {LinkedList}=require('./linkedList')
 // console.log(tets)
 
 
+let ab=new LinkedList(2)
+ab.append(3)
+ let result=ab.append(4)
+  result=ab.insert_middle(5)
+console.log(result)
+ 
 
