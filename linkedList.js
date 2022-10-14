@@ -103,10 +103,21 @@ class LinkedList {
 
   //this method reverses the linked list in the opposite direction.
   reverse() {
+    if (this.head == null) return -1
+
+    head = this.head
+    newHead = null
+    while (head != null) {
+      let nextNode = head.next;
+      // set the current node's next to point backwards 
+      head.next = newHead;
+      // store the current node, to be used as the new next later
+      newHead = head;
+      // the previously right-side node is now processed
+      head = nextNode;
 
 
-    console.log(this.head);
-
+    }
   }
 
   getMiddle(node) {
@@ -132,7 +143,7 @@ class LinkedList {
 
   }
 
-
+  //inserts in the middle of the algo using a tortoise and hare algorithim
   insert_middle(val) {
 
     let temp = this.head
@@ -159,7 +170,7 @@ class LinkedList {
 
   }
 
-
+  //gets the length of linked list
   getLength() {
     let i = 0
     let temp = this.head
@@ -170,6 +181,7 @@ class LinkedList {
 
     return i
   }
+
 
   isEven_odd() {
     let length = this.getLength()
@@ -210,24 +222,24 @@ class LinkedList {
     let slow_p = this.head
     let sum = 0
 
-  
+
     for (let i = 0; i < value; i++) {
       sum += fast_p.value
       fast_p = fast_p.next
-     
+
     }
-  
 
-    
 
-    
+
+
+
     while (fast_p != null) {
-      
+
       sum -= slow_p.value
-      sum+=fast_p.value
+      sum += fast_p.value
       slow_p = slow_p.next
       fast_p = fast_p.next
-    
+
     }
 
 

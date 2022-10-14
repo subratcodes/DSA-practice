@@ -23,13 +23,16 @@ const {LinkedList}=require('./linkedList.js')
 
 
 let ab=new LinkedList(0)
+ab.append(1)
 
-for(let i=1; i<=5; i++){
-  ab.append(i)
-}
+console.log(ab.reverse())
+
+// for(let i=1; i<=10; i++){
+//   ab.append(i)
+// 
 
 
-result=ab.sum_lastNode(0)
+
 
 
  
