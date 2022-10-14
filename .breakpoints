@@ -1,5 +1,25 @@
 {
   "files": {
+    "linkedList.js": [
+      {
+        "id": "f2c512b7-6713-4541-8a6c-640755ee7846",
+        "line": 183,
+        "version": 4525,
+        "index": 3093
+      },
+      {
+        "id": "d1af45fc-7c37-4288-8d89-98c6838052af",
+        "line": 186,
+        "version": 4525,
+        "index": 3149
+      },
+      {
+        "id": "1a7d0669-1652-4d46-8d3f-5d8e0682d348",
+        "line": 190,
+        "version": 4525,
+        "index": 3252
+      }
+    ],
     "rotation.js": [
       {
         "id": "857ee317-af91-4a36-921c-840b0883605a",

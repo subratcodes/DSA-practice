@@ -135,50 +135,79 @@ class LinkedList {
 
   insert_middle(val) {
 
-    let temp=this.head
-     let fast=temp.next.next
-     let slow=temp
+    let temp = this.head
+    let fast = temp.next.next
+    let slow = temp
 
-  
-     while(fast!=null){
-       fast=fast.next
-       slow=slow.next
-     }
+
+    while (fast != null) {
+      fast = fast.next
+      slow = slow.next
+    }
 
     //slow will  be the middle pointer element
-    let node={
-      value:val,
-      next:null
+    let node = {
+      value: val,
+      next: null
     }
-    node.next=slow.next
-    slow.next=node
-  
+    node.next = slow.next
+    slow.next = node
+
     return this.printList()
-    
-   
-
-    }
 
 
-  getLength ( ){
-    i=-1
-    temp=this.head
-    while(temp){
+
+  }
+
+
+  getLength() {
+    let i = 0
+    let temp = this.head
+    while (temp) {
       i++
-      temp=temp.next
+      temp = temp.next
     }
 
     return i
   }
 
+  isEven_odd() {
+    let length = this.getLength()
+    console.log(length)
+  }
 
 
-
-
+  //funds the Kn th node 
+  kthNode(value) {
+    if (this.head == null) return -1
+    let count = this.getLength()
+    
+// gets the count
+    let index = parseInt(count / value)
+    let temp=this.head
+  
+    //runs to the index of the loop.
+    if(index==0) return temp.value
+    
+    let i=1
+    
+    while(i!=index){
+      
+      temp=temp.next
+      i++
+    }
 
   
-
+    return temp.value
+  
   }
+
+
+
+
+
+
+}
 
 
 

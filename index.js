@@ -22,10 +22,17 @@ const {LinkedList}=require('./linkedList.js')
 // console.log(tets)
 
 
-let ab=new LinkedList(2)
-ab.append(3)
- let result=ab.append(4)
-  result=ab.insert_middle(5)
-console.log(result)
+let ab=new LinkedList(0)
+
+
+for(let i=1;i<5;i++){
+
+  ab.append(i)
+
+}
+
+result=ab.kthNode(10)
+console.log( result)
+
  
 
