@@ -181,30 +181,67 @@ class LinkedList {
   kthNode(value) {
     if (this.head == null) return -1
     let count = this.getLength()
-    
-// gets the count
+
+    // gets the count
     let index = parseInt(count / value)
-    let temp=this.head
-  
+    let temp = this.head
+
     //runs to the index of the loop.
-    if(index==0) return temp.value
-    
-    let i=1
-    
-    while(i!=index){
-      
-      temp=temp.next
+    if (index == 0) return temp.value
+
+    let i = 1
+
+    while (i != index) {
+
+      temp = temp.next
       i++
     }
 
-  
+
     return temp.value
-  
+
   }
 
+  sum_lastNode(value) {
+
+    if (value <= 0) return -1
+
+    let fast_p = this.head
+    let slow_p = this.head
+    let sum = 0
+
+  
+    for (let i = 0; i < value; i++) {
+      sum += fast_p.value
+      fast_p = fast_p.next
+     
+    }
+  
+
+    
+
+    
+    while (fast_p != null) {
+      
+      sum -= slow_p.value
+      sum+=fast_p.value
+      slow_p = slow_p.next
+      fast_p = fast_p.next
+    
+    }
+
+
+    this.print(sum)
 
 
 
+
+
+  }
+
+  print(value) {
+    console.log(value)
+  }
 
 
 }
