@@ -2,6 +2,7 @@ const { EasyArrays } = require('./arrays.js');
 const {Graph}=require('./graphs.js')
 const {Solution}=require('./two_pointer.js')
 const {LinkedList}=require('./linkedList.js')
+const testcase=require('./TestCases/array.js')
 
 
 // let directed=new Graph()
@@ -22,18 +23,12 @@ const {LinkedList}=require('./linkedList.js')
 // console.log(tets)
 
 
-let ab=new LinkedList(0)
-ab.append(1)
-
-console.log(ab.reverse())
-
-// for(let i=1; i<=10; i++){
-//   ab.append(i)
-// 
 
 
 
-
+let solve=new EasyArrays()
+ b=solve.duplicateElements(testcase.a,testcase.a.length)
+console.log(b)
 
  
 
