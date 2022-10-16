@@ -104,7 +104,8 @@ class BinaryTree {
 class BinaryTreeQuestions{
 
 
-countLeaves(node){
+countLeaves(){
+  node=this.head
  if(node == null)     
             return 0; 
         if(node.left == null && node.right == null) 
@@ -121,6 +122,22 @@ checkValidity(root){
   
 }
 
+  getSize(node){
+
+       
+    if (node==null) return 0
+    if(node.left==null || node.right==null) return 1
+    else return this.getSize(node.left)+this.getSize(node.right)
+ 
+     
+  
+  }
+
+checkLeft(left){
+    
+  }
+
+  
   
 }
 
@@ -131,3 +148,33 @@ module.exports = {
 	BinaryTree,BinaryTreeQuestions
 };
 
+  let last_element;
+      switch(char){
+        case ')':
+          last_element=stack.pop()
+          if(last_element!='(') return 'invalid'
+          break;
+        
+         
+        case '}':
+          last_element=stack.pop()
+          if(last_element!='{')return 'invalid'
+          break;
+          
+          
+        case ']':
+          last_element=stack.pop()
+          if(last_element!='[')return 'invalid'
+        
+          
+           
+      }
+      
+      
+      
+      
+    }
+    
+    if(stack.length==0) console.log('valid')
+    else console.log('invalid')
+      

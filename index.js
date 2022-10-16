@@ -3,6 +3,7 @@ const {Graph}=require('./graphs.js')
 const {Solution}=require('./two_pointer.js')
 const {LinkedList}=require('./linkedList.js')
 const testcase=require('./TestCases/array.js')
+const {BinaryTree, BinaryTreeQuestions}=require('./trees.js')
 
 
 // let directed=new Graph()
@@ -26,9 +27,20 @@ const testcase=require('./TestCases/array.js')
 
 
 
-let solve=new EasyArrays()
- b=solve.duplicateElements(testcase.a,testcase.a.length)
-console.log(b)
+// let solve=new EasyArrays()
+//  b=solve.duplicateElements(testcase.a,testcase.a.length)
+// console.log(b)
 
  
+let Btree=new BinaryTree()
+Btree.insert(2)
+Btree.insert(3)
+Btree.insert(1)
+let b =Btree.insert(5)
 
+
+let ques=new BinaryTreeQuestions()
+
+result=ques.getSize(b)
+console.log(result)
+return result
