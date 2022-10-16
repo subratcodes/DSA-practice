@@ -143,38 +143,8 @@ checkLeft(left){
 
 
 
-
 module.exports = {
 	BinaryTree,BinaryTreeQuestions
 };
 
-  let last_element;
-      switch(char){
-        case ')':
-          last_element=stack.pop()
-          if(last_element!='(') return 'invalid'
-          break;
-        
-         
-        case '}':
-          last_element=stack.pop()
-          if(last_element!='{')return 'invalid'
-          break;
-          
-          
-        case ']':
-          last_element=stack.pop()
-          if(last_element!='[')return 'invalid'
-        
-          
-           
-      }
-      
-      
-      
-      
-    }
-    
-    if(stack.length==0) console.log('valid')
-    else console.log('invalid')
       

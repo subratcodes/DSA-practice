@@ -4,8 +4,16 @@ const {Solution}=require('./two_pointer.js')
 const {LinkedList}=require('./linkedList.js')
 const testcase=require('./TestCases/array.js')
 const {BinaryTree, BinaryTreeQuestions}=require('./trees.js')
+const {Sorting}=require('./sorting.js')
 
 
+
+
+
+let b_sort=new Sorting()
+let a=[2,34,1,34,0]
+ let result= b_sort.bubble_sort(a)
+console.log(result)
 // let directed=new Graph()
 
 // for (let i=0;i<6;i++){
@@ -32,15 +40,20 @@ const {BinaryTree, BinaryTreeQuestions}=require('./trees.js')
 // console.log(b)
 
  
-let Btree=new BinaryTree()
-Btree.insert(2)
-Btree.insert(3)
-Btree.insert(1)
-let b =Btree.insert(5)
+// let Btree=new BinaryTree()
+// Btree.insert(2)
+// Btree.insert(3)
+// Btree.insert(1)
+// let b =Btree.insert(5)
 
 
-let ques=new BinaryTreeQuestions()
+// let ques=new BinaryTreeQuestions()
 
-result=ques.getSize(b)
-console.log(result)
-return result
+// result=ques.getSize(b)
+// console.log(result)
+// return result
+
+
+
+
+
