@@ -251,6 +251,36 @@ class LinkedList {
 
   }
 
+
+  removeDuplicates() {
+    // nIave appraoch 0(n^2)
+    if (!this.head) return this.head
+    let store = new Set()
+
+    let temp = this.head
+    let previousLink = null
+
+    while (temp) {
+
+       var data=temp.value
+      
+      if (store.has(data)){
+          previousLink.next=temp.next
+
+      } else {
+        store.add(data)
+        previousLink = temp
+      }
+      temp=temp.next
+
+    }
+    return this.printList()
+
+
+
+
+  }
+
   print(value) {
     console.log(value)
   }

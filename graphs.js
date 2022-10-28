@@ -18,7 +18,7 @@ class Graph {
 
     try {
 
-      if(this.validateNodesConnections(node1,node2)) throw Error('Nodes already added')
+      if (this.validateNodesConnections(node1, node2)) throw Error('Nodes already added')
       this.adjacentList[node1].push(node2)
       this.adjacentList[node2].push(node1)
       return this.adjacentList
@@ -43,36 +43,61 @@ class Graph {
       }
       console.log(node + "-->" + connections);
     }
-   }
+  }
 
-  runBFS(root){
+  runBFS(root) {
 
-     if(!root) throw Error('No root found')
-     let visited=[]
-     let queue=[]
-    while(root){
-     vertex=queue.shift()
-      queue.push(vertex)
+    if (!root) throw Error('No root found')
+    let visited = []
+    let queue = [root]
+    while (queue.length != 0) {
 
-      // for (let i=0;i<this.adjacentList[vertex].length;i++){
-      //   if(queue includes(this.adjacentList[vertex][i])){
-      //     //do nothing cause it has been already added to the queueu
-      //   }else {
-          
-      //   }
-      // }
-      
-      
+      vertex = queue.shift()
+
+      visited.push(vertex)
 
 
 
-      
+
+
+
+
+
     }
-     
-     
 
+
+
+
+  }
+
+  fetch_vertex(){
+    
+    temp=Object.keys(this.adjacentList)
+    return temp.length
     
   }
+  
+  motherVertex(root) {
+    //A Mother Vertex is a vertex through which we can reach all the other vertices of the Graph.
+
+    //swill store the nodes count.
+    total_vertex=this.fetch_vertex()
+    if(total_vertex==0) return null
+    
+    
+   nodes_count={
+
+     
+   } 
+
+
+
+
+
+  }
+
+
+
 }
 
 

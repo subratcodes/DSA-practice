@@ -8,28 +8,24 @@ const {Sorting}=require('./sorting.js')
 
 
 
+// let test=new LinkedList(2)
+// test.append(2)
+// test.append(2)
+// test.append(2)
+
+// console.log(test.removeDuplicates())
+
+
+
+
 
 
 let b_sort=new Sorting()
 let a=[2,34,1,34,0]
- let result= b_sort.bubble_sort(a)
+ let result= b_sort.selectionSort(a)
 console.log(result)
-// let directed=new Graph()
-
-// for (let i=0;i<6;i++){
-//   b=directed.addVertex(i)
-// }
-
-// b=directed.addEdge(0,1)
-// b=directed.addEdge(1,0)
-// console.dir(b)
 
 
-// let a=[9,4,-7,2,3,7]
-// let t1=new Date()
-// let tets=  new Solution().subArray_zeroSum(a,a.length)
-// let t2=new Date()
-// console.log(tets)
 
 
 
@@ -43,17 +39,11 @@ console.log(result)
 // let Btree=new BinaryTree()
 // Btree.insert(2)
 // Btree.insert(3)
-// Btree.insert(1)
-// let b =Btree.insert(5)
+// Btree.insert(4)
+// let a=Btree.insert(1)
 
 
 // let ques=new BinaryTreeQuestions()
 
-// result=ques.getSize(b)
-// console.log(result)
-// return result
 
-
-
-
-
+// console.log(ques.count_no_leaf(a))
