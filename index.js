@@ -19,15 +19,34 @@ const {Sorting}=require('./sorting.js')
 
 
 
+// let b_sort=new Sorting()
+// let a=[2,34,1,34,0]
+//  let result= b_sort.selectionSort(a)
+// console.log(result)
 
-let b_sort=new Sorting()
-let a=[2,34,1,34,0]
- let result= b_sort.selectionSort(a)
-console.log(result)
+let a=[86,93,82,78,35,94,91,17,12,51,90]
+console.log(sortIt(a,a.length))
 
-
-
-
+ function sortIt(arr,n){
+        //code here
+          arr=arr.sort()
+       let result=[]
+        
+        //running from right to left
+        for(let i=n-1;i>=0;i--){
+            
+            if(arr[i]%2!=0) result.push(arr[i])
+        }
+        
+        
+        for(let i=0;i<n;i++){
+            if(arr[i]%2==0) result.push(arr[i])
+        }
+        
+        return result
+        
+        
+    }
 
 
 

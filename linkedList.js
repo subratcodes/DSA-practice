@@ -281,6 +281,20 @@ class LinkedList {
 
   }
 
+
+  pairWiseSwapElemnet(){
+  let curr=this.head
+    while(curr.next!=null){
+      
+    }
+
+
+    
+  }
+
+
+  
+
   print(value) {
     console.log(value)
   }
