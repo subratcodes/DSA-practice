@@ -57,6 +57,12 @@ class Sorting {
     
   }
 
+  mergeSort(arr,n){
+    
+  }
+
+
+
 
   
 }
