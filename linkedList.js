@@ -23,6 +23,8 @@ class LinkedList {
     return this;
   }
 
+  
+
   //prepending allows it to be added in the front.
   prepend(value) {
     const newNode = {
@@ -284,7 +286,9 @@ class LinkedList {
 
   pairWiseSwapElemnet(){
   let curr=this.head
+  let dumb_Node=null
     while(curr.next!=null){
+       current.next=curr
       
     }
 

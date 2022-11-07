@@ -125,7 +125,6 @@ class EasyArrays {
 
   }
 
-
   thirdLargest(arr, n) {
 
     let a = arr[0], b = arr[0], c = arr[0];
@@ -146,28 +145,32 @@ class EasyArrays {
     console.log(c)
   }
 
-  duplicateElements(arr, n) {
+  duplicateElements(numRay, n) {
     let result = []
-
-    if (n == 0 || n == 1) return -1
-
-    let list = new Set()
-
     for (let i = 0; i < n; i++) {
-
-      if (list.has(arr[i])) {
-
-        result.push(arr[i])
-      } else list.add(arr[i])
+      numRay[numRay[i] % n]= numRay[numRay[i] % n] + n;
     }
-    if (result.length == 0) return -1
 
-    return result
+    for
 
 
   }
 
-  
+  leader(arr, n) {
+
+    let max = Number.MIN_VALUE
+    let result = []
+    for (let i = n - 1; i >= 0; i--) {
+      if (arr[i] >= max) {
+        max = arr[i]
+        result.push(arr[i])
+      }
+    }
+
+    return result.reverse()
+  }
+
+
 
 }
 

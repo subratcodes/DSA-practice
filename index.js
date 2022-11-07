@@ -33,14 +33,15 @@ const {Sorting}=require('./sorting.js')
 // console.log(b)
 
  
-// let Btree=new BinaryTree()
-// Btree.insert(2)
-// Btree.insert(3)
-// Btree.insert(4)
-// let a=Btree.insert(1)
+let Btree=new BinaryTree()
+Btree.insert(2)
+Btree.insert(3)
+Btree.insert(4)
+let a=Btree.insert(1)
 
 
-// let ques=new BinaryTreeQuestions()
+
+let ques=new BinaryTreeQuestions()
 
 
-// console.log(ques.count_no_leaf(a))
+ console.log(ques.recursiveBFS([a],[]))

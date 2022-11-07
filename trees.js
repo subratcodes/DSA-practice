@@ -72,6 +72,9 @@ class BinaryTree {
     return this.root;
   }
 
+  
+
+  
 
   //left =----> root--->right
   inOrder(root) {
@@ -133,7 +136,19 @@ class BinaryTreeQuestions {
      this.count_no_leaf(root.left)+this.count_no_leaf(root.right)
     if(root.left|| root.right) return 1
   }
-  
+
+  recursiveBFS(queue,result){
+    if(queue.length==0)return result
+    let currentNode=queue.shift()
+    result.push(currentNode.value)
+    //if value is there we push in the queue
+    if(currentNode.left) queue.push(currentNode.left)
+    if(currentNode.right)queue.push(currentNode.right)
+    
+    return this.recursiveBFS(queue,result)
+    
+    
+  }
   
 
 
