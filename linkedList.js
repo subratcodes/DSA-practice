@@ -102,6 +102,11 @@ class LinkedList {
 
   }
 
+  deleteMiddle(){
+    //deletes the middle element by slow and fast pointer approach
+  }
+
+  
 
   //this method reverses the linked list in the opposite direction.
   reverse() {

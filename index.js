@@ -1,12 +1,17 @@
 const { EasyArrays } = require('./arrays.js');
-const {Graph}=require('./graphs.js')
-const {Solution}=require('./two_pointer.js')
-const {LinkedList}=require('./linkedList.js')
-const testcase=require('./TestCases/array.js')
-const {BinaryTree, BinaryTreeQuestions}=require('./trees.js')
-const {Sorting}=require('./sorting.js')
+const { Graph } = require('./graphs.js')
+const { Solution } = require('./search.js')
+const { LinkedList } = require('./linkedList.js')
+const testcase = require('./TestCases/array.js')
+const { BinaryTree, BinaryTreeQuestions } = require('./trees.js')
+const { Sorting } = require('./sorting.js')
+const { sortStack } = require('./stacks.js')
 
 
+
+
+let sol=new Solution()
+let b=sol.binarysearch()
 
 // let test=new LinkedList(2)
 // test.append(2)
@@ -17,7 +22,7 @@ const {Sorting}=require('./sorting.js')
 
 
 
-
+l
 
 
 
@@ -32,16 +37,16 @@ const {Sorting}=require('./sorting.js')
 //  b=solve.duplicateElements(testcase.a,testcase.a.length)
 // console.log(b)
 
- 
-let Btree=new BinaryTree()
-Btree.insert(2)
-Btree.insert(3)
-Btree.insert(4)
-let a=Btree.insert(1)
+
+// let Btree=new BinaryTree()
+// Btree.insert(2)
+// Btree.insert(3)
+// Btree.insert(4)
+// let a=Btree.insert(1)
 
 
 
-let ques=new BinaryTreeQuestions()
+// let ques=new BinaryTreeQuestions()
 
 
- console.log(ques.recursiveBFS([a],[]))
+//  console.log(ques.recursiveBFS([a],[]))

@@ -151,7 +151,7 @@ class EasyArrays {
       numRay[numRay[i] % n]= numRay[numRay[i] % n] + n;
     }
 
-    for
+  
 
 
   }
