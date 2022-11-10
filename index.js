@@ -12,7 +12,7 @@ const{dp}=require('./dp.js')
 
  let sol=new dp()
 let a= sol.fibo_dp()
-console.log(a(2))
+console.log(a(3))
 
 
 
