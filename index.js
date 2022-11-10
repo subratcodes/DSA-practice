@@ -6,12 +6,15 @@ const testcase = require('./TestCases/array.js')
 const { BinaryTree, BinaryTreeQuestions } = require('./trees.js')
 const { Sorting } = require('./sorting.js')
 const { sortStack } = require('./stacks.js')
+const{dp}=require('./dp.js')
 
 
 
+ let sol=new dp()
+let a= sol.fibo_dp()
+console.log(a(2))
 
-let sol=new Solution()
-let b=sol.binarysearch()
+
 
 // let test=new LinkedList(2)
 // test.append(2)
@@ -19,10 +22,6 @@ let b=sol.binarysearch()
 // test.append(2)
 
 // console.log(test.removeDuplicates())
-
-
-
-l
 
 
 

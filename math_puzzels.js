@@ -11,4 +11,9 @@ class Solution{
          if(C>A && C<B) return C
          else if(C<A && C>B) return C
     }
+
+
+  happy_Number(n){
+    
+  }
 }
