@@ -10,16 +10,21 @@ const{dp}=require('./dp.js')
 
 
 
- let sol=new dp()
-let a= sol.fibo_dp()
-console.log(a(3))
+//  let sol=new dp()
+// let a= sol.fibo_dp()
+// console.log(a(5))
 
 
 
-// let test=new LinkedList(2)
-// test.append(2)
-// test.append(2)
-// test.append(2)
+let test=new LinkedList(2)
+test.append(4)
+
+test.append(7)
+test.append(8)
+
+
+
+console.table( test.deleteMiddle())
 
 // console.log(test.removeDuplicates())
 

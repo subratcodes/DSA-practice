@@ -10,6 +10,7 @@ class Solution {
   
   fibo_dp() {
     let cache = {}
+    let result=[]
     return function fib(n) {
       if(n in cache){
         return cache[n]
@@ -17,12 +18,20 @@ class Solution {
         if(n<2) return n
         else{
          cache[n]=fib(n-1)+fib(n-2)
-        return cache[n]
+         result.push(cache[n])
+          return result
         }
       }
     }
 
   }
+
+
+  gridRows(m,n){
+    //find the number of ways where we can find the grid trav
+  }
+
+  
 
 
   

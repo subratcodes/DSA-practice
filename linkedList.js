@@ -23,7 +23,7 @@ class LinkedList {
     return this;
   }
 
-  
+
 
   //prepending allows it to be added in the front.
   prepend(value) {
@@ -102,11 +102,41 @@ class LinkedList {
 
   }
 
-  deleteMiddle(){
+  deleteMiddle() {
     //deletes the middle element by slow and fast pointer approach
-  }
+    let prev_ele = null
+    //your code here
+    let temp = this.head
+    let fast_p = temp
+    let slow_p = temp
+    let prev_p = null
+    while (fast_p && fast_p.next) {
+      prev_p = slow_p
+      slow_p = slow_p.next
+      fast_p = fast_p.next.next
+    }
 
-  
+    console.log(slow_p)
+
+    if (fast_p) {
+      //the list is odd
+      prev_p.next=slow_p.next
+      
+
+    }else{
+      //list is even.
+      prev_p.next=slow_p.next
+      
+    }
+
+
+    return this.printList()
+
+
+
+  }
+ 
+
 
   //this method reverses the linked list in the opposite direction.
   reverse() {
@@ -269,16 +299,16 @@ class LinkedList {
 
     while (temp) {
 
-       var data=temp.value
-      
-      if (store.has(data)){
-          previousLink.next=temp.next
+      var data = temp.value
+
+      if (store.has(data)) {
+        previousLink.next = temp.next
 
       } else {
         store.add(data)
         previousLink = temp
       }
-      temp=temp.next
+      temp = temp.next
 
     }
     return this.printList()
@@ -289,20 +319,20 @@ class LinkedList {
   }
 
 
-  pairWiseSwapElemnet(){
-  let curr=this.head
-  let dumb_Node=null
-    while(curr.next!=null){
-       current.next=curr
-      
+  pairWiseSwapElemnet() {
+    let curr = this.head
+    let dumb_Node = null
+    while (curr.next != null) {
+      current.next = curr
+
     }
 
 
-    
+
   }
 
 
-  
+
 
   print(value) {
     console.log(value)
