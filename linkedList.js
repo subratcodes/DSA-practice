@@ -120,13 +120,13 @@ class LinkedList {
 
     if (fast_p) {
       //the list is odd
-      prev_p.next=slow_p.next
-      
+      prev_p.next = slow_p.next
 
-    }else{
+
+    } else {
       //list is even.
-      prev_p.next=slow_p.next
-      
+      prev_p.next = slow_p.next
+
     }
 
 
@@ -135,7 +135,7 @@ class LinkedList {
 
 
   }
- 
+
 
 
   //this method reverses the linked list in the opposite direction.
@@ -332,6 +332,44 @@ class LinkedList {
   }
 
 
+  sortedInsert(data) {
+    //your code here
+    let temp = this.head
+    let prev = temp
+    let point = {
+      value: data,
+      next: null
+    }
+
+    
+    while (temp.next!=null) {
+      //checks the value and increments if found small
+    
+      if (temp.value > data) {
+        prev.next=point
+        point.next=temp
+        return this.printList()
+      }
+      prev = temp
+      temp = temp.next
+
+    }
+
+
+    if (prev.value == temp.value) {
+      point.next = temp
+      this.head=point
+      return this.printList()
+      
+    }else{
+      prev.next=point
+      return this.printList()
+    }
+
+  
+
+
+  }
 
 
   print(value) {

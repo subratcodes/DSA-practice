@@ -18,13 +18,10 @@ const{dp}=require('./dp.js')
 
 let test=new LinkedList(2)
 test.append(4)
-
 test.append(7)
 test.append(8)
 
-
-
-console.table( test.deleteMiddle())
+console.log(test.sortedInsert(9))
 
 // console.log(test.removeDuplicates())
 
