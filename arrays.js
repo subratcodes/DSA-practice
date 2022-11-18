@@ -170,6 +170,14 @@ class EasyArrays {
     return result.reverse()
   }
 
+  run(arr){
+    for (const s in arr){
+      console.log()
+    }
+  }
+
+  
+
 
 
 }
@@ -177,10 +185,6 @@ class EasyArrays {
 
 
 class SlidingWindow {
-
-  maxSum(arr, n, k) {
-
-  }
 
 
 

@@ -334,37 +334,20 @@ class LinkedList {
 
   sortedInsert(data) {
     //your code here
-    let temp = this.head
-    let prev = temp
     let point = {
       value: data,
       next: null
     }
 
+    let lt=this.head
+    lt=lt.next
+
+
     
-    while (temp.next!=null) {
-      //checks the value and increments if found small
+   //start with always a base case.
+
     
-      if (temp.value > data) {
-        prev.next=point
-        point.next=temp
-        return this.printList()
-      }
-      prev = temp
-      temp = temp.next
-
-    }
-
-
-    if (prev.value == temp.value) {
-      point.next = temp
-      this.head=point
-      return this.printList()
-      
-    }else{
-      prev.next=point
-      return this.printList()
-    }
+    
 
   
 

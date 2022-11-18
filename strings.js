@@ -125,18 +125,50 @@ conRevstr(S1,S2) {
   
 }
 
-print2largest(arr,n){
-
-
 
 
 
   
 }
-  
-  
 
+
+
+class runPrefix extends EasyStringProblems{
+
+longestCommonPrefix(arr,n){ 
+        //code here
+        let result=arr[0]
+        for(let z=1;z<n;z++){
+            result=this.runPrefix(result,arr[z])
+        }
+        
+        
+        if(result=='')return -1
+        return result
+        
+        
+        
+    }
+  
+runPrefix(str1,str2){
+        
+        let l1=str1.length
+        let l2=str2.length
+        let result=''
+        
+        for(let i=0, j=0; i<l1 && j<l2;i++,j++){
+            if(str1[i]!=str2[j]) break 
+            else result+=str2[i]
+        }
+        
+        
+        return result
+    }
+
+  
 }
+
+
 
 
 

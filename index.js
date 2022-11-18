@@ -16,16 +16,17 @@ const{dp}=require('./dp.js')
 
 
 
-let test=new LinkedList(2)
-test.append(4)
-test.append(7)
-test.append(8)
+// let test=new LinkedList(2)
+// test.append(4)
+// test.append(7)
+// test.append(8)
 
-console.log(test.sortedInsert(9))
+// console.log(test.sortedInsert(9))
 
 // console.log(test.removeDuplicates())
 
-
+let test2=new EasyArrays()
+test2.run([1,2,4])
 
 // let b_sort=new Sorting()
 // let a=[2,34,1,34,0]
