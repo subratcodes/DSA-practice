@@ -26,7 +26,7 @@ const{dp}=require('./dp.js')
 // console.log(test.removeDuplicates())
 
 let test2=new EasyArrays()
-test2.run([1,2,4])
+test2.last_word("   fly me   to   the moon  ")
 
 // let b_sort=new Sorting()
 // let a=[2,34,1,34,0]

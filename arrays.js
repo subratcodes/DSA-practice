@@ -176,6 +176,39 @@ class EasyArrays {
     }
   }
 
+  removeDuplicates(arr,n){
+    //run in constant time.
+
+
+    let flag=0
+    let distinctElements=0
+    for(let i=0;i<n;i++){
+      if(arr[i]!=arr[i+1]){
+        distinctElements++
+        arr[flag]=arr[i]
+        flag++
+      }
+    }
+
+    arr[flag]=arr[n-1]
+
+
+   console.log(arr,distinctElements)
+
+
+    
+  }
+
+
+  last_word(s){
+    let result=s.slice(" ")
+     let start=null
+     let end=null
+
+     console.log( typeof result)
+  }
+
+  
   
 
 
