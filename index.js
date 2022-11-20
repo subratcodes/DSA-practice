@@ -7,7 +7,7 @@ const { BinaryTree, BinaryTreeQuestions } = require('./trees.js')
 const { Sorting } = require('./sorting.js')
 const { sortStack } = require('./stacks.js')
 const{dp}=require('./dp.js')
-
+const {DoubleLinkList}= require('./doublyLinkedList')
 
 
 //  let sol=new dp()
@@ -16,17 +16,12 @@ const{dp}=require('./dp.js')
 
 
 
-// let test=new LinkedList(2)
-// test.append(4)
-// test.append(7)
-// test.append(8)
+let test=new DoubleLinkList(2)
+test.append(4)
 
-// console.log(test.sortedInsert(9))
-
+console.log(test.reverse())
 // console.log(test.removeDuplicates())
 
-let test2=new EasyArrays()
-test2.last_word("   fly me   to   the moon  ")
 
 // let b_sort=new Sorting()
 // let a=[2,34,1,34,0]

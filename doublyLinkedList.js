@@ -146,8 +146,21 @@ class DoubleLinkList{
 
   reverse(){
 
+    let current=this.head
+    let temp=null
+    while(current!=null){
 
-   console.log(this.head);
+      temp=current.prev
+      //switching the sides
+      current.prev=current.next
+      current.next=temp
+      current=current.prev      
+    }
+
+
+    return this.head
+   
+
    
  }
 }
