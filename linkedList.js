@@ -370,6 +370,32 @@ class LinkedList {
   }
 
 
+  delete_n_after_m(m,n){
+
+    let length=this.getLength()
+    if(m+n>length) throw('Value Error')
+    let temp=this.head
+
+    m--
+    while(m!=0){
+      m--
+      temp=temp.next
+    }
+
+    let skip=temp
+
+    while(n!=0){
+      n--
+      skip=skip.next
+    }
+    if(skip)temp.next=skip.next
+    else temp.next=null
+
+    return this.head
+   
+  }
+
+
   print(value) {
     console.log(value)
   }
