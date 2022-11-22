@@ -326,24 +326,39 @@ class LinkedList {
       current.next = curr
 
     }
-
-
-
   }
 
 
-  sortedInsert(data) {
+  sorted_insert_circular(data) {
     //your code here
-    let point = {
-      value: data,
-      next: null
-    }
-
-    let lt=this.head
-    lt=lt.next
-
-
-    
+     //your code here
+        let prev=this.head
+        let temp=this.head
+        let node=new Node(data)
+        
+        while(data>temp.data){
+            if(prev.data>temp.data){
+                //we are running in a loop.
+                node.next=temp
+                prev.next=node
+                return head
+            }
+         prev=temp    
+         temp=temp.next   
+            
+        }
+        //between case handled here.
+        if(prev==temp){
+            //at the starting of the list
+            node.next=temp
+            return node
+        }else{
+            //between the list
+            node.next=temp
+            prev.next=node
+            return head
+        }
+  
    //start with always a base case.
 
     
