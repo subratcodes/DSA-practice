@@ -186,8 +186,6 @@ class ParenthesisChecker {
   }
 }
 
-
-
 function sortStack(s){
 
 

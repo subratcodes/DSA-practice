@@ -128,12 +128,7 @@ class LinkedList {
       prev_p.next = slow_p.next
 
     }
-
-
     return this.printList()
-
-
-
   }
 
 

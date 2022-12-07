@@ -16,7 +16,6 @@ class EasyArrays {
     //simple solution. sort the array and find the element -2;
     //better approach. -- run through the array 2 times. and find the largest and the smallest.
 
-    //
 
     if (n == 0 || n < 2) throw ' Invalid Array sent out to me.';
     let max = -2454635434;

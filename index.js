@@ -10,23 +10,41 @@ const{dp}=require('./dp.js')
 const {DoubleLinkList}= require('./doublyLinkedList')
 
 
-//  let sol=new dp()
-// let a= sol.fibo_dp()
-// console.log(a(5))
+
+
+let b_search=new Solution()
+let r=b_search.runBinary(0,5,3,[1,2,3,4,5,6])
+console.log(r)
 
 
 
-let test=new LinkedList(9)
-test.append(1)
-test.append(3)
-test.append(5)
-test.append(9)
-test.append(4)
-test.append(10)
-test.append(1)
 
-console.log(test.delete_n_after_m(2,1))
-// console.log(test.removeDuplicates())
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// let test=new LinkedList(9)
+// test.append(1)
+// test.append(3)
+// test.append(5)
+// test.append(9)
+// test.append(4)
+// test.append(10)
+// test.append(1)
+
+// console.log(test.delete_n_after_m(2,1))
+// // console.log(test.removeDuplicates())
 
 
 // let b_sort=new Sorting()

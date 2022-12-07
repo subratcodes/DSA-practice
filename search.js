@@ -10,7 +10,7 @@ class Solution {
     }
 
     //running the binary search. option.
-    runBinarySearch(start, end, index,arr){
+    runBinarySearch(start=0, end, index,arr){
 
        console.log(start, end)
          while(start<=end){
@@ -22,6 +22,15 @@ class Solution {
         
     }
 
+    runBinary(start, end, target,arr){
+
+      if(start>end || !end) throw 'error in start and end parameters'
+
+      let pivot=(start+end)/2
+      if(arr[pivot]==target) return pivot
+      else if(arr[pivot]>target)  this.runBinary(0,pivot-1,target,arr)
+      else  this.binarysearch(pivot+1,arr.length,target,arr)      
+    }
     
 }
 
