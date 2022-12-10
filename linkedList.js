@@ -131,6 +131,26 @@ class LinkedList {
     return this.printList()
   }
 
+  delete_via_value(value){
+    
+    //moving the head to the non deleting value which skips the bad nodes
+    while(this.head && this.head.value==value) this.head=this.head.next
+
+    if(head==null) return head
+
+    let curr=head
+    while(curr!=null && curr.next!=null){
+      if(curr.next.value==value) current.next=curr.next.next
+      else curr=curr.next
+    }
+
+    return this.printList()
+
+    
+    
+    
+  }
+
 
 
   //this method reverses the linked list in the opposite direction.
