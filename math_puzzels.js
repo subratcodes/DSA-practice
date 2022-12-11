@@ -12,8 +12,32 @@ class Solution{
          else if(C<A && C>B) return C
     }
 
+   
+  
+
 
   happy_Number(n){
+
+    
+    
     
   }
+
+  power_2(n){
+    if (n<=0) return false
+    while(n%2==0) n=parseInt(n/2)
+    return true
+  }
+
+
+  sum_square_digits(n){
+    let result=0
+    while(n!=0){
+      result+=(n%10) *n(n%10)
+      n=n/10
+    }
+    return result
+  }
 }
+
+
